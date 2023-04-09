@@ -1,0 +1,191 @@
+{
+  "$type": "entry",
+  "$id": ["reference", "batchID"],
+  "$kind": "sample",
+  "$owners": ["admin@cheminfo.org"],
+  "$content": {
+    "general": {
+      "geopos": {
+        "lat": "",
+        "lon": "",
+        "alt": ""
+      },
+      "description": "",
+      "name": "",
+      "mf": "",
+      "molfile": "",
+      "mw": "",
+      "title": "",
+      "keyword": "",
+      "sequence": "",
+      "kind": "",
+      "em": "",
+      "ocl": {
+        "value": "",
+        "coordinates": "",
+        "index": []
+      },
+      "metadata": {
+        "date": "",
+        "collector": "",
+        "departament": "",
+        "town": "",
+        "estate": "",
+        "terrainShape": "",
+        "slope": ""
+      }
+    },
+    "identifier": {
+      "cas": [],
+      "chemSpiderID": [],
+      "taxon": {
+        "id": "",
+        "family": "",
+        "gender": "",
+        "specie": ""
+      },
+      "gisID": []
+    },
+    "spectra": {
+      "ir": [],
+      "mass": [],
+      "nmr": [],
+      "raman": [],
+      "chromatogram": [],
+      "differentialScanningCalorimetry": [],
+      "elementalAnalysis": [],
+      "iv": [],
+      "thermogravimetricAnalysis": [],
+      "uv": [],
+      "xray": []
+    },
+    "physical": {
+      "bp": [],
+      "density": [],
+      "mp": [],
+      "nd": []
+    },
+    "biology": {
+      "nucleic": [],
+      "cellLine": {
+        "growthCondition": {
+          "temperature": "",
+          "pH": "",
+          "concentration": "",
+          "extracts": "",
+          "strain": "",
+          "growthCurves": {
+            "jcamp": "",
+            "misc": ""
+          },
+          "protocol": ""
+        },
+        "biosafetyRisk": ""
+      }
+    },
+    "image": [],
+    "stock": {
+      "supplier": "",
+      "description": "",
+      "catalogNumber": "",
+      "qty": "",
+      "history": {
+        "location": "",
+        "date": "",
+        "status": ""
+      }
+    },
+    "misc": {
+      "attachments": "",
+      "category": "",
+      "reference": ""
+    },
+    "agro": {
+      "agroClimate": {
+        "estimatedAgroEcoClass": "",
+        "ambientTemperature": "",
+        "relativeHumidity": "",
+        "soilTemperture": "",
+        "soilHumidity": "",
+        "soilCompactation": "",
+        "soilDeepness": "",
+        "soilColor": "",
+        "soilPhenologicalState": "",
+        "habitat": "",
+        "cultivatedDensity": "",
+        "neighboringVegetation": "",
+        "phytosanitaryState": "",
+        "seedingDate": "",
+        "harvestNumber": "",
+        "slot": "",
+        "slotArea": "",
+        "soilAcidityControl": "",
+        "soilAcidityControlDate": "",
+        "soilAcidityControlAppliedDose": "",
+        "soilFertilization": "",
+        "soilFertilizationDate": "",
+        "soilFertilizer": "",
+        "soilFertilizerDose": "",
+        "shadow": "",
+        "pestControlMethod": ""
+      },
+      "soil": {
+        "mycorrhization": "",
+        "sporeDensity": "",
+        "apparentDensity": "",
+        "texturalClass": "",
+        "pH": "",
+        "interchangeableAcidity": "",
+        "electricConductivity": "",
+        "organicCarbon": "",
+        "organicMaterial ": "",
+        "totalPhosphorus": "",
+        "availablePhosphorus": "",
+        "dilutedPhosphorus": "",
+        "totalNitrogen": "",
+        "cNratio": "",
+        "potassium": "",
+        "calcium": "",
+        "magnesium": "",
+        "baseSaturation": "",
+        "iron": "",
+        "phosphataseActivity": "",
+        "aMOactivity": "",
+        "bGlucosidaseActivity": "",
+        "dehydrogenaseActivity": "",
+        "cationExchangeCapacity": "",
+        "microbiomeTaxonomicGroups": ""
+      },
+      "vegetal": {
+        "collectedPart": ""
+      },
+      "collected": {
+        "herbariumID": "",
+        "dryingDescription": "",
+        "extractionDescription": ""
+      }
+    },
+    "samplePreparation": {
+      "method": "",
+      "protocol": "",
+      "abbreviation": "",
+      "solventProportion": [],
+      "timeByRefill": [],
+      "tlc": [],
+      "contactTime": "",
+      "extractedMass": "",
+      "yield": "",
+      "fraction": {
+        "amount": "",
+        "yield": "",
+        "abbreviation": "",
+        "protocol": "",
+        "solventProportion": [],
+        "tlc": []
+      }
+    }
+  },
+  "$lastModification": "",
+  "$modificationDate": "",
+  "$creationDate": ""
+}
