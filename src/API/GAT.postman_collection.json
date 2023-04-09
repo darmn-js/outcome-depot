@@ -1,0 +1,559 @@
+{
+	"info": {
+		"_postman_id": "6f4dbd74-d1e0-4029-bd61-da8332445d4b",
+		"name": "GAT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21195488"
+	},
+	"item": [
+		{
+			"name": "pro2",
+			"item": [
+				{
+					"name": "AgroToc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/_query/agro_toc",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"_query",
+								"agro_toc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEntrySample",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "useBrowser",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "AuthSession",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "AuthSession",
+								"value": "cmVzdC1vbi1jb3VjaDo2NDA5MkY0QzqN6dXzvpcBeF6ODVlUR8U-CI8NFw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/entry/864c03c8796c27a19215ff22fc8ab368",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"entry",
+								"864c03c8796c27a19215ff22fc8ab368"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tocs",
+			"item": [
+				{
+					"name": "FractionToc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/_query/fraction_toc",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"_query",
+								"fraction_toc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SampleToc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/_query/sample_toc",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"_query",
+								"sample_toc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExtractToc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/_query/extract_toc",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"_query",
+								"extract_toc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgroToc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/_query/agro_toc",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"_query",
+								"agro_toc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VegetalToc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/_query/vegetal_toc",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"_query",
+								"vegetal_toc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SoilToc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/_query/soil_toc",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"_query",
+								"soil_toc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sample",
+			"item": [
+				{
+					"name": "create_sample",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"$type\": \"entry\",\n  \"$id\": [\"create_test\", \"create_test\"],\n  \"$kind\": \"sample\",\n  \"$owners\": [\"admin@cheminfo.org\"],\n  \"$content\": {\n    \"general\": {\n      \"geopos\": {\n        \"lat\": \"\",\n        \"lon\": \"\",\n        \"alt\": \"\"\n      },\n      \"description\": \"\",\n      \"name\": \"\",\n      \"mf\": \"\",\n      \"molfile\": \"\",\n      \"mw\": \"\",\n      \"title\": \"\",\n      \"keyword\": \"\",\n      \"sequence\": \"\",\n      \"kind\": \"\",\n      \"em\": \"\",\n      \"ocl\": {\n        \"value\": \"\",\n        \"coordinates\": \"\",\n        \"index\": []\n      },\n      \"metadata\": {\n        \"date\": \"\",\n        \"collector\": \"\",\n        \"departament\": \"\",\n        \"town\": \"\",\n        \"estate\": \"\",\n        \"terrainShape\": \"\",\n        \"slope\": \"\"\n      }\n    },\n    \"identifier\": {\n      \"cas\": [],\n      \"chemSpiderID\": [],\n      \"taxon\": {\n        \"id\": \"\",\n        \"family\": \"\",\n        \"gender\": \"\",\n        \"specie\": \"\"\n      },\n      \"gisID\": []\n    },\n    \"spectra\": {\n      \"ir\": [],\n      \"mass\": [],\n      \"nmr\": [],\n      \"raman\": [],\n      \"chromatogram\": [],\n      \"differentialScanningCalorimetry\": [],\n      \"elementalAnalysis\": [],\n      \"iv\": [],\n      \"thermogravimetricAnalysis\": [],\n      \"uv\": [],\n      \"xray\": []\n    },\n    \"physical\": {\n      \"bp\": [],\n      \"density\": [],\n      \"mp\": [],\n      \"nd\": []\n    },\n    \"biology\": {\n      \"nucleic\": [],\n      \"cellLine\": {\n        \"growthCondition\": {\n          \"temperature\": \"\",\n          \"pH\": \"\",\n          \"concentration\": \"\",\n          \"extracts\": \"\",\n          \"strain\": \"\",\n          \"growthCurves\": {\n            \"jcamp\": \"\",\n            \"misc\": \"\"\n          },\n          \"protocol\": \"\"\n        },\n        \"biosafetyRisk\": \"\"\n      }\n    },\n    \"image\": [],\n    \"stock\": {\n      \"supplier\": \"\",\n      \"description\": \"\",\n      \"catalogNumber\": \"\",\n      \"qty\": \"\",\n      \"history\": {\n        \"location\": \"\",\n        \"date\": \"\",\n        \"status\": \"\"\n      }\n    },\n    \"misc\": {\n      \"attachments\": \"\",\n      \"category\": \"\",\n      \"reference\": \"\"\n    },\n    \"agro\": {\n      \"agroClimate\": {\n        \"estimatedAgroEcoClass\": \"\",\n        \"ambientTemperature\": \"\",\n        \"relativeHumidity\": \"\",\n        \"soilTemperture\": \"\",\n        \"soilHumidity\": \"\",\n        \"soilCompactation\": \"\",\n        \"soilDeepness\": \"\",\n        \"soilColor\": \"\",\n        \"soilPhenologicalState\": \"\",\n        \"habitat\": \"\",\n        \"cultivatedDensity\": \"\",\n        \"neighboringVegetation\": \"\",\n        \"phytosanitaryState\": \"\",\n        \"seedingDate\": \"\",\n        \"harvestNumber\": \"\",\n        \"slot\": \"\",\n        \"slotArea\": \"\",\n        \"soilAcidityControl\": \"\",\n        \"soilAcidityControlDate\": \"\",\n        \"soilAcidityControlAppliedDose\": \"\",\n        \"soilFertilization\": \"\",\n        \"soilFertilizationDate\": \"\",\n        \"soilFertilizer\": \"\",\n        \"soilFertilizerDose\": \"\",\n        \"shadow\": \"\",\n        \"pestControlMethod\": \"\"\n      },\n      \"soil\": {\n        \"mycorrhization\": \"\",\n        \"sporeDensity\": \"\",\n        \"apparentDensity\": \"\",\n        \"texturalClass\": \"\",\n        \"pH\": \"\",\n        \"interchangeableAcidity\": \"\",\n        \"electricConductivity\": \"\",\n        \"organicCarbon\": \"\",\n        \"organicMaterial \": \"\",\n        \"totalPhosphorus\": \"\",\n        \"availablePhosphorus\": \"\",\n        \"dilutedPhosphorus\": \"\",\n        \"totalNitrogen\": \"\",\n        \"cNratio\": \"\",\n        \"potassium\": \"\",\n        \"calcium\": \"\",\n        \"magnesium\": \"\",\n        \"baseSaturation\": \"\",\n        \"iron\": \"\",\n        \"phosphataseActivity\": \"\",\n        \"aMOactivity\": \"\",\n        \"bGlucosidaseActivity\": \"\",\n        \"dehydrogenaseActivity\": \"\",\n        \"cationExchangeCapacity\": \"\",\n        \"microbiomeTaxonomicGroups\": \"\"\n      },\n      \"vegetal\": {\n        \"collectedPart\": \"\"\n      },\n      \"collected\": {\n        \"herbariumID\": \"\",\n        \"dryingDescription\": \"\",\n        \"extractionDescription\": \"\"\n      }\n    },\n    \"samplePreparation\": {\n      \"method\": \"\",\n      \"protocol\": \"\",\n      \"abbreviation\": \"\",\n      \"solventProportion\": [],\n      \"timeByRefill\": [],\n      \"tlc\": [],\n      \"contactTime\": \"\",\n      \"extractedMass\": \"\",\n      \"yield\": \"\",\n      \"fraction\": {\n        \"amount\": \"\",\n        \"yield\": \"\",\n        \"abbreviation\": \"\",\n        \"protocol\": \"\",\n        \"solventProportion\": [],\n        \"tlc\": []\n      }\n    }\n  },\n  \"$lastModification\": \"\",\n  \"$modificationDate\": \"\",\n  \"$creationDate\": \"\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/entry/",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"entry",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_sample",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/entry/{{uuid}}",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"entry",
+								"{{uuid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_sample",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"cc1509ee87fd221f211e1b376054eb92\",\n    \"_rev\": \"2-7f7ca86897eb52b053e4dba4f5d6c250\",\n    \"$type\": \"entry\",\n    \"$id\": [\n        \"create_test\",\n        \"create_test\"\n    ],\n    \"$kind\": \"sample\",\n    \"$owners\": [\n        \"pro2@gat.mylims.org\",\n        \"admin@cheminfo.org\"\n    ],\n    \"$content\": {\n        \"general\": {\n            \"geopos\": {\n                \"lat\": \"\",\n                \"lon\": \"\",\n                \"alt\": \"\"\n            },\n            \"description\": \"\",\n            \"name\": \"\",\n            \"mf\": \"\",\n            \"molfile\": \"\",\n            \"mw\": \"\",\n            \"title\": \"new title\",\n            \"keyword\": \"\",\n            \"sequence\": \"\",\n            \"kind\": \"\",\n            \"em\": \"\",\n            \"ocl\": {\n                \"value\": \"\",\n                \"coordinates\": \"\",\n                \"index\": []\n            },\n            \"metadata\": {\n                \"date\": \"\",\n                \"collector\": \"\",\n                \"departament\": \"\",\n                \"town\": \"\",\n                \"estate\": \"\",\n                \"terrainShape\": \"\",\n                \"slope\": \"\"\n            }\n        },\n        \"identifier\": {\n            \"cas\": [],\n            \"chemSpiderID\": [],\n            \"taxon\": {\n                \"id\": \"\",\n                \"family\": \"\",\n                \"gender\": \"\",\n                \"specie\": \"\"\n            },\n            \"gisID\": []\n        },\n        \"spectra\": {\n            \"ir\": [],\n            \"mass\": [],\n            \"nmr\": [],\n            \"raman\": [],\n            \"chromatogram\": [],\n            \"differentialScanningCalorimetry\": [],\n            \"elementalAnalysis\": [],\n            \"iv\": [],\n            \"thermogravimetricAnalysis\": [],\n            \"uv\": [],\n            \"xray\": []\n        },\n        \"physical\": {\n            \"bp\": [],\n            \"density\": [],\n            \"mp\": [],\n            \"nd\": []\n        },\n        \"biology\": {\n            \"nucleic\": [],\n            \"cellLine\": {\n                \"growthCondition\": {\n                    \"temperature\": \"\",\n                    \"pH\": \"\",\n                    \"concentration\": \"\",\n                    \"extracts\": \"\",\n                    \"strain\": \"\",\n                    \"growthCurves\": {\n                        \"jcamp\": \"\",\n                        \"misc\": \"\"\n                    },\n                    \"protocol\": \"\"\n                },\n                \"biosafetyRisk\": \"\"\n            }\n        },\n        \"image\": [],\n        \"stock\": {\n            \"supplier\": \"\",\n            \"description\": \"\",\n            \"catalogNumber\": \"\",\n            \"qty\": \"\",\n            \"history\": {\n                \"location\": \"\",\n                \"date\": \"\",\n                \"status\": \"\"\n            }\n        },\n        \"misc\": {\n            \"attachments\": \"\",\n            \"category\": \"\",\n            \"reference\": \"\"\n        },\n        \"agro\": {\n            \"agroClimate\": {\n                \"estimatedAgroEcoClass\": \"\",\n                \"ambientTemperature\": \"\",\n                \"relativeHumidity\": \"\",\n                \"soilTemperture\": \"\",\n                \"soilHumidity\": \"\",\n                \"soilCompactation\": \"\",\n                \"soilDeepness\": \"\",\n                \"soilColor\": \"\",\n                \"soilPhenologicalState\": \"\",\n                \"habitat\": \"\",\n                \"cultivatedDensity\": \"\",\n                \"neighboringVegetation\": \"\",\n                \"phytosanitaryState\": \"\",\n                \"seedingDate\": \"\",\n                \"harvestNumber\": \"\",\n                \"slot\": \"\",\n                \"slotArea\": \"\",\n                \"soilAcidityControl\": \"\",\n                \"soilAcidityControlDate\": \"\",\n                \"soilAcidityControlAppliedDose\": \"\",\n                \"soilFertilization\": \"\",\n                \"soilFertilizationDate\": \"\",\n                \"soilFertilizer\": \"\",\n                \"soilFertilizerDose\": \"\",\n                \"shadow\": \"\",\n                \"pestControlMethod\": \"\"\n            },\n            \"soil\": {\n                \"mycorrhization\": \"\",\n                \"sporeDensity\": \"\",\n                \"apparentDensity\": \"\",\n                \"texturalClass\": \"\",\n                \"pH\": \"\",\n                \"interchangeableAcidity\": \"\",\n                \"electricConductivity\": \"\",\n                \"organicCarbon\": \"\",\n                \"organicMaterial \": \"\",\n                \"totalPhosphorus\": \"\",\n                \"availablePhosphorus\": \"\",\n                \"dilutedPhosphorus\": \"\",\n                \"totalNitrogen\": \"\",\n                \"cNratio\": \"\",\n                \"potassium\": \"\",\n                \"calcium\": \"\",\n                \"magnesium\": \"\",\n                \"baseSaturation\": \"\",\n                \"iron\": \"\",\n                \"phosphataseActivity\": \"\",\n                \"aMOactivity\": \"\",\n                \"bGlucosidaseActivity\": \"\",\n                \"dehydrogenaseActivity\": \"\",\n                \"cationExchangeCapacity\": \"\",\n                \"microbiomeTaxonomicGroups\": \"\"\n            },\n            \"vegetal\": {\n                \"collectedPart\": \"\"\n            },\n            \"collected\": {\n                \"herbariumID\": \"\",\n                \"dryingDescription\": \"\",\n                \"extractionDescription\": \"\"\n            }\n        },\n        \"samplePreparation\": {\n            \"method\": \"\",\n            \"protocol\": \"\",\n            \"abbreviation\": \"\",\n            \"solventProportion\": [],\n            \"timeByRefill\": [],\n            \"tlc\": [],\n            \"contactTime\": \"\",\n            \"extractedMass\": \"\",\n            \"yield\": \"\",\n            \"fraction\": {\n                \"amount\": \"\",\n                \"yield\": \"\",\n                \"abbreviation\": \"\",\n                \"protocol\": \"\",\n                \"solventProportion\": [],\n                \"tlc\": []\n            }\n        }\n    },\n    \"$lastModification\": \"pro2@gat.mylims.org\",\n    \"$modificationDate\": 1680286450716,\n    \"$creationDate\": 1680286450672\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/entry/{{uuid}}",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"entry",
+								"{{uuid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_sample",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/entry/{{uuid}}",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"entry",
+								"{{uuid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_attachment_to_sample",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"c08048c75f398ea247552e9e212364e8\",\n    \"_rev\": \"4-18e558a1086ca1f3d6acc142df7fc970\",\n    \"_attachments\": {\n        \"image/plant.jpg\": {\n            \"content_type\": \"image/jpeg\",\n            \"data\": \"/9j/4AAQSkZJRgABAQEAYABgAAD//gAwQ3JlYXRpb24gVGltZTogRnJpIDEwIE1hciAyMDIzIDEyOjI0OjUyIFBNIC0wNf/+ABxTb2Z0d2FyZTogZ25vbWUtc2NyZWVuc2hvdP/bAIQABAQEBAQEBQUFBQcHBgcHCgkICAkKDwoLCgsKDxYOEA4OEA4WFBgTEhMYFCMcGBgcIykiICIpMSwsMT47PlFRbQEEBAQEBAQFBQUFBwcGBwcKCQgICQoPCgsKCwoPFg4QDg4QDhYUGBMSExgUIxwYGBwjKSIgIikxLCwxPjs+UVFt/8IAEQgBMgHQAwERAAIRAQMRAf/EADYAAAICAwEBAQAAAAAAAAAAAAIDBAUAAQYHCAkBAAMBAQEBAQAAAAAAAAAAAAABAgMEBQYH/9oADAMBAAIQAxAAAAD578jSKCUbTaSxG6nGk0120jWtBb2EgZysJChIolJY92NSspm4ibaSyRKAqBBYaZjNBuRiGwOyHZUyDYDVAGAcs4WgxByOxCzGQ2SmSbdiSvWU6Lyj2nCbUG2MSIkWhZjMKjNpd4MijDZGwVSQKNRoNg5FlEWsq1RZImEkC6E0LZjMA5GKnQNzG5jIokBQDMGcspCkOBmbbgjgdmbApNj05DVI1PM/ZuM1HBLNi0SLWMxB1UZtRRD2WZnsawj1MQAoICJNFpBazNoiwUygOlHbSxehgZMsKdA5DYbc2UGSapg3sCmzSdmHmMh7hFA3IKA0C0FLWqDSeA9feMTHZFQpmqkRCIgyqSPZRDYBBgJCLUwwGjYYDR2MzawraJsBSA1SjWJa1S0GxslOlulthullBkmgVRspoMkZmNyDlgpLNtyGQbRjldpWoG6quvp5/SYrVdQlmyEuVtlJuq2MyjTfL0wBpaiXEMF0bDAaOaptM4tUTyJAapoqQoEWJmm+G2RsDYb5Z5mUaYi6BDGHI2BkIoMEWdOzCkwBcr0EapG09A+3iNop9FWNxiQMwAqbEGqwN1TgdNaBQow4lqFQpzgiAwnSrKFZKZ5Mhom1tA5Fhy5EORDfDZm2wNRtGUBTRbTRpm0NlNhMzGoyBkhQYxVCLSdUjaew5/Q4XrjnqiISgpLhYYh4FTwNOnQNqtAkEJw7mExVTjWwMJ8qyhWSicKQ5YgQxmAxKTFSM7bAcDoDk1bXTW0jRhoBSwRyNzGwNgOQ5NIAE0I0SNpRquu5PQ886c6uwknSNEIQElBqkFVpt0plMAUUlEKyKZhaBhA2SciyzmxJnskEtIwWDIbZJOTZLOaKRsDCgoVQptFtexqpwW5GwnQNgbIcGSCxViLI+kp0Cz7ON3hkk+XJRJRtOO5qWo1m8X0XE+Z9dPwE2R3SQihHeYaIQJDkTgsYViTPcSCHD0Gw3I6SRDOKJMpDgyqBtTaqFaCrBucaxJ0D4HQSIGQHAIKsj2J0lWhwW3SDUvItIuUlJHuGmlVMrrEyfoL+LdXyh+o86vMPOfp4hdIpOKCnAaSAGg1VhJZqZ6mYZyahoEPchyOSdFlNbRkm0aqlDXTToIsTZqp2BibKkSPyJMDshkGmKsVYm5Cjynq1EJsO8z1sIJKeIipVlGmmlfYn5F1ek/Ob+a+jHxR+38AWd74JM9GPIvRtVxgjlsCaKxhWBMwiQ4eIxnIcJro5raeI3Bg1jU2qmrQjaCqW2iEaTUOkk5EqB+Usl6AaS2hphR4x3WtEhVaxpdZuSmctcu6x0vItbOw+ePfPxleB/X5eGfsWf0h+X1Y/M4H9G/j39W1h9EbJOadLlhPFPM5pMolpDQJM0yTwMl6TxGJ4mLa6a6FWacmzCSBiGqZWZIzHZDYCRuhbNUDR4n3UpvE5E3NzqcXIhXeF9RlrgxaXU+jfmyl+HPe8N1GMavOzNPkb9oy4f6GMA1T5clOcRNImkyxPJMWxmngbDEyl7kweS8ZgwDKMJJogNhMZMych+Y6BkhhiaqNUDS8b7dIjEjJWxN6c2H1PJr0+d7b0A1MBLsPzrD6h/NfQ554V/bdrU/CP7/y876kYBDaEhOZKmkTnEoTgYIwNGMwClshlIQyTwNBpBsICaYSTRj2k/MfA6BqNgsa6S6BZ57v0U1zVsweIYh810vNr1uFyGxbTSqemR+V5vrT819EPMxsdNPm39Tz8C+659ucAgMHjkqZqmeTIE0GiMDFgYBIfNOgdASMK0zcjQNohEBEkGUOzHZjQKTAW6XSW1qjiNOuJU0iItIQNDIJWVdThd4r3TrdFxfXFv5GHXeHrJivIftIjdIsWw2UQGk0UlTIJlilMcLbNiJLBbEwcmXIgfkOl7pmmaHSjJ23sCJ0zGNgbIY8RpIXS6FVIhyGnZXhEShMAW0bzW1IWNoBuFrK70v8AyZ+g/wAwPmf9cqP0iwW5xmFENky0HtSEpZD2Na01jMSwRhIRJkdBIhyIbUNGaHJEGwIMJAN0MkKQgwYpadBUqDA4/XrhpxJUNApHNbiNORuU7CLa9DRd15k+kfFPyH9HvKSkASLBESsknMkBJJmJSUMuApYzGlpMCVJKkkSScyRDYgwIGJ7YSNiEWN4LYYg0YwUCzQaDA4vXpjq4kqLBmZIkwnTm90R7IdCmp0Tdv5h6L8a/Jv0WsGslQtAJOF7G9KU5myXfn1ZYmXEPumH1TghEYSZJKHyScyQg0bYaZy8Ag0IWYwWsDQGGwANyYw0bR55vsEWuGmX1ninsnzxA82Zv08df7sQOXL0D5zq7Tuz+SPoDxaq9H+Lfkv6JW3SyVkiACx1sbxTYOo8Suj8i5gG5i90c972ad89MIb0mgyRyTgMewag4rEYAsFmMFzgYzaCAUEhgEG4PON9l51qHKxv2L5FeZeuqX1oCoRul6IFVz5Fe5fLz4/8AS31fyq8e/R72CxA0AgZthjkTVryP0L43a34HKpb2hPVFH9BlSe1kQbTakQbDYiaJjFTUNTyWAaDAJzoMDbMQIAxrGybQUPzrXRcUUNsVqAGhqBtL0EaJNinR5n07+S3xPXn4n+nXgBSAQhuxYmKpE11Pg36F8V0WfEn6yW8K64pPoMuc+nywRQ9pZRqjAG1jTE2INPUvE8A5GEnRgYAgugWGDJDhsH53TFDZp00KamgaDQXcosj0AUIdJ8/Xtfx+XIfe16L1noOa86+Xjt8zvarp/VdD60fANdNr83p33x+lt5rfSLeEehPN/U8tB9HGqDRpgUCAsVZjW0GPaCQc04GQYS1DA2xSF2CwQICimhwVhSMG1UAIoCkFMKhNNA1lDJ6n8pf0z+XzR+dnbemcr0xH89WnII6b8++orn/v58z6ujpPnq7H5yuj8epdG9FXelHL/XcdR7qDV7QLBBTamIs0wkGDQdBIlyZGSYpYxsAAlg0LbXRgbTIOLsNBgRQMQAtapA5XVKGCYyXnjX9U/iBZ8U1HbMXoPIP0WvL/AK0DV1XRb4d3wT0Xh11fgO+8WpcsOqKv3s6f6DCm9pK1ekCMBqoRQijGbQ4JaJEElEnIbISNuWSLbQxNtQBZgbDB8k5fA3JthgCSdKcAWBbAFAI5PHXt/wCZlp59eAfqhX95B7Gi6U1hcrGbvii+8Sum8GrnyHKQj1s672oq/Wzq/XEataElAAUJYqjTDRJCdJKgkIkZD5DRgtDj20Apgtat4GBsfPc+cziH8w7GgxUXSA0WWZohsVVIYtErkr3X8zrjvf08m+/kdEjZx9NE0spy8puPOi88V9L4tW/k03eY3qxB9VVvrxU+qIprBQwbFimLZgGEhE6SbJIgfA6Q0CNbcZiQyjTMswBDBI+UmXzjoN50tzGqUOd3ObSvWkbNG7jtO5a9Z+E183+vfM+znm4nWk62mzVkrObfyYu/HrpPKdhzXvdJ7oi+gqj2prPSQDEAGltba2CzAMJCmbLmySIb4DQsAKSNFyLNj2B2tgICTI+KJEtnA2Y0GkJ1hPRAayqhbpGij6uNQ1V6d8ht5N9dMXtS+uV2z10h6GXEnEtvJV349X3nuTRvdJ6SH6arfYiD0mgxMBqbU2qjTMaYKRMyCpUkiG2GAJYCYJiSnQIHIbZgaAaU74VSot3CzyaahG6PpiHrkjVodR7E0pXX3uw27D5rbzv6rgtdNoHY6fqUw16DPXjZ8/c81z5F3nmu246kWDvKu8rvSVd6cRtzEO5HJ5qySJu4faI3nCSB6GxU3JPye0J0aRv5ST57fg2MDc3oFoovQRO1K3jqvg+kc5LkLuNOavJHcjqg0mu3wiXvnVXSV6fFetFOZ9X8tvr2evyn3fO5jqx6fj0ourLocOr27xemNjErz6vebnRw46OcNZgejED01W9+WrbOUtvIuRy0SgLdX6LqvXhWqZmPxJ/G53KtFI6CNqbxuy867XyiX5ty+enSRvTmL6cxulU/rqp9PPpvh9rry938qtOzppdsafr56nZUPv6y5LI770um6J8F97gtOTb03wu2o9CWce1F24ece55UVzLm+m4ejssdgxBz6Ie3N0XBx994UDvuW1R1m0wZ5qm8Gp8hlJG6i9KrvViNvM3JSuZycWEirFaDNKs/P1k8LLznI5LsOepaUTvUTvUfdVPpRS+xld+BpP8AP7L3k1m9F0/W+C9/n4f6DDlfRqBS6zh6eu8/0G5njv0nh1HW7Div0Dw+rreH0u08vv8AO/a86o6+So3yp+nP0byO6lvTg/X86q6eS5H7r8m5nOvMPb7L3DST1ctBy4Vzn3/8qFehTJczlFdEV+stlNY7Nr1B1H6Bt74dH8rkYDOTSXzjINbEXvQdcwumabuxi/R+zE6FBNL3mfk3rVX9/B5L7XB1HDcDo0hw+04deM9DCt2w9B8jq7/Do5qdTinTPbeL61b3c9R1ef5f7vFYoncO9xydHI+phD2w9E8jr9V8rq8K+j4mZL0vyujju/nfa9Z+RXk/1GF9zHQ+BXefJ5/P36QvYPj30PEuJ96vTvmx+YerMaOd68tvwCm5PImtx+553oNY5v2I5nsy+av0zo9C8nv5T0OK3UdJwel4963l816PNcYa9Xw9F1hp553ctZ05mLrfL7De1P0c3S81UN2yovsnw3XjZ07WCZx9HT+f0KuYmkSNJh5a0Hfyyc5otztvN7C2fD+r5tLrnb46+ieTtWXFD3ZxdHJhVg/YPmjqMj1b5WuV6X6B89W/OrOQbFgo89+ynwv9EjoeBtheQfW4xWU7qyxqPtjYD6Dy/R4z0uFG0szdzF9JkUNg0sIk8/VQbYWcFjhrT9cXvHfNehlWkrRNV9Fx9FjK5XvxcPr/ADdY6LGldJ0bVZ0Zwt1HhQbibLuebc9kyFW2UtxE2zKptZJsHO1f1h+b68d7hwXoT6v8mcH9NPBeyqTrgZDdSUrUVTl0Kc2UpLvvfG7+a68+h5q9Exrzn1OGus5zSaTeYbi/w2snlf8An9kySqreVnjw/r8tVU7aZBZZ6KErqVtzErOrHOqxs4F7lhm7bN9DxOu9GOeqex8nfm+3Oo2mDsQLiJvlHuZIoDcnO+hwFjq6TnIMcTHuqmy7zruPPvkevNOW26q2w36Pg1879nz49Oz5tLKFQ9ETsLq+iYnRlKx07jy+z1/g6OYqlBD6efzn0cK7TJbz3Tp9M9NWUWzU3D63g15nQbc6Js1UmCJZOiu/4dlSqLeKPqUzOaXeKukvfOvuQlyU4VGqVpzX2/B2c528kcJ44wj0UiH3HPXnXTkmauMOr3D53v8ANvZnyf2fF2PECVmevU+bdJ2zYVHpfmdvsfleje82iMO2NtzeR+x5F2RyNz576XJSaOBrEO02WyiU6XJ0XNV5yddL28j7jmqhlXgW/JpYxpsm/i+64tPFvU5mkUnXnWUWMEASKCsZhfXYnIauTLuDTRnQdGfS4OA6g7R//8QAIxAAAgICAwEBAQADAQAAAAAAAQIDBAAFBhESEAcTCBQVIP/aAAgBAQABAgB8d+1xfvbYVYHDgwfDhLM7d4mQZFkOR4udklvXot6BBVg4f0WLhgxf16GLgwYMHw42NjpKnkAA/O8IcMAOs7JZncnBiZBkWRGMqSWYsX9egwIIKkN6Z+wwb0MGLgxSD2D69FmLK6FCOy3eDO3PQXrz5YNjsPgxMgyLIihUku5f16DAqQVKt69ly4bsEYMGe1cN69s/syGRo2Vlf4cOevRJzoDz10+Pj4PgxchMRhMZDMzOWwkEFSCpBzogkEEYpB77VgQSxJYsXu0ZY3WbFwlj86C+VUJ5x8kx/oxciMRiaNlLnDgzpQFChVUDrohsGAhgwbvsEEYcJZmZntQXopMn+MwzoAL5AUZ04fHx/oxciyLIjGyk/CAFVEWMRhFTx5w44PwEMCuAADCSSzOzM07bVpHdWjaIxhVHwYPhx8YPj/Ri5FkWRBAvzryEVI0CgAKOiDjY2H6pBGD4MJJYsWLGxJsbRIRYBUanLU8dMRgztmJcuTh+DFEYiEYjCgfAAFVVGDBi/CWLFiT69AqVII+AFWVgwI3W4LLiKqorLIksbZSHJOKHKda1CS5fGw4QMURCIRBAuDOhnSAYMGDO/RYsWZmb16BVlKlfgw4wYMCrzrLE0eJi4cfLAkKmjr/0v8z/ACXRbKXHx8IIOALkWRCPI8XBnXQAA/8AJJLMzM5cP6DKyspUjBhw4QwIaUSwzV50ZWZ3ebE1z6r8n3e9pwaeUgar825t+Y4fi4oiyLIzHi4MHwDAfXr37LMxZmY9/BgxSmJgwE4QQUKPi4jVbKTLKX6p68YTwDkj7vkl/X63iPAths7+vtw/FK5GUMZjKEEHsN79lvXr16JOMCoTx5CBFVVUABfHgr5KsvkYrRzx2hZoEHs4c0O33dXXcTligg6/RKXxcUxlDG0bIwPr16777H3rojz48hf5iMRqqIqqnnyQRhElVlIGKVaE63BnWHLL05GrSya3SWoOW7n4MXI8QxGPFYP33332GHwDz110FChQgXwEVQAOuiCD8eGzTK9YMjfWzRPhxm2M/Er3EuZ763cvfpf6wR10AMQqYmjZSGDe/fv2GVhgHRHQUIECBfPkAADO+ySfjCQTwlPIQLBLS2qWTJbvbDY8MnhofoXMZZW+ddDAFChMQoQfXv8Ap/QSI6OrqwOBQAoXrz5wYMB779EsSe2yYurr5C9ddLcbYM/XGTJt7djHHn6uAqY8TFwfO++1KFSpUrgACgYMHzv0MB9d9+ixYt2zSZJjHACOiHGHBnHTz8fG+H52CpTI8QKnn70mJiYuKFA+A9ggk956D+/Xv0W7+FnaQnBgU4om4onBZeAX+NEaHObkYcb4cOdgqUyFK9RahqzVuuulCYmLiYp7DD6CT69d9+/XrvvB8Ll2PXHOIWvyetq4/wBVn/yYH+Q8P6rF+g/t2+0jczIJJ+Ek9jEyPNfVgriua81azB5EYRFAUqysWBB+dluyfXrO/XoEDsE4cGU6z/qGz5CSxOMWbVcj1W12XF+UKCSSSSSCDHlGKrBFEIjG8WxhChQqgDAQwYOjeixk9d9/O+++1IPfZw4AoOE4cfGLscrWOB8x5KMOEdeZq4wZHmnjgSNAhQpslIzrOyQfXoMG9+/YcHv6T2CHDhw2dKAGBw4SxbG+8QuR8Q0n4bqP8Ydr/jxyDgHHeS7Te62jyWfdz64U8RQhRxdMmDBhJJb2X9hxIJPSlc67BGHD979BhIPgwFixJ7YtjZ2T+S6yzZiqRbW5apapGvPJ+owfsUOUspPEUxzZkstIe/RYszFy/sOHUgoF+dADDhJwsTgPofBgLFs68lWUoUKca2Wp5SbFpry8q/UqG/2m8GR5XWllRq8gkeazLYaQ+vfsu0jOX9hkZcUJi4B0MGMzMzk99hiy4FWP+TRGPx/P+ZiMRjMeur1VqLsNrYnZWDYBGK4qZUMLepHlaUzEszl/bOWLelaMoVxMUr9ZmZmJP3vuKFYFg/i0bR+PH8jGyFCNc+ib9H2RBVldSoEYgFXKmRYWdpcmZicOH4Sx+LiZHiYuLi536Zmctnf3uKFYhGYzFJB/L+RjZGRlZaQ19rllnDjBlKgRiEVBXxWLszm25Jzo4cONnXShBHiYuDPTOZGkZywcH/xGoAXyVYMhUghw+MKQpS3pJEbC0EJAVBAKqx4rFnd5LBJzpgVKkdALi4uIVPtpDIWwqcBX538jCoI/DBsMbY2MzMxhylfqm5rYuL/859/T2NnWV40WKKuEEaNhLGdzgxIlgNaSu8XnpQMjxFCkP8REgFb/AETr1pmrLUZe4oP5dR6WRVqpCK+yhhyGhram35vqOYW9qOT7GZTbtQ2eN35uRJatFnhPpz3bX+f8o68VX/V/g9aarLCIhCsEFZYDC6sscMFaKBIUr/6kldopYp4nWKBa1WKubuss1pYN3f0VfZQ1odtV2D1A2ho7urruS8MMcua6zVStt/8Aq8k32q5JV5qa5zYCChY1cVBK/wDN4GR69jXRa9KS1FqNCYTQj18VEUf9KKrDWNeSs9V6tilZoRxxYKsg3N+fkfJ7uziuXNDZ1H6Fu6GxtwUW2Vinp9ToN5ybQRcHhomSGTeau/QtUb1HQS7Wfa8ph5/f5TBzvhfKq1eW1SIoSUf+ctBaH+k1FaApCkKiVRUSukX8GrNXFWzVlqWop7lR9jsIuUc4lQ8fyrlZf+9f3cdmuk03+9HOm7kW6OXal56m50W15Nxp6iVeN7ezc5PyLj+z0UGz0+q3OhvckFHlGj/RdpueQ/oum5pa2FL9Gouaa0zTaqsXhY1jCWTDX62u/wBtyfW8x03J9jzLWfo+z5Fyfc+6W3oXuRbnc2lhSHSPe3o28vMr9yluju5r9MV7NfXavYQWd1LSzaxmvJsatyrejm2m5S/rd6bm75EvFZpJNnTj0v6vqv15eWx/p8EpiUENJy39F2X6lwb9T5z+mTb6PdQFnrVHpmotRq6a+rUt8dlR5qlzarAlVH4/KqU58bPSnQzWp7+wrXqrXKcOl2PFKWksQXYf+cdNDp7dLV0Nxt5d/Zz+UdmK9ZuxTcU55zj9A4z+ma/9ir/oN167JujQSrZieGdGTU6/WV9zr9Jxi7rdttpJtjkrQA7RbtLcz7uvm0m2IcV61ifX3p5o6Nfjr063ItpNrd1TiOorSQQbOPVymxyW/HeaK1A2QxO7NGanIbGJNbypFGlu7ImqqUdHNqNbac1BHQfbWL+r21vk1q5VkuWcox6Tjtv8823CTx1bdmhJrRVEkohlM7XKdv8A7969UE8SX4t/Y2HHN1W2lmzbvV6u543fK0zXszIWjeUS6y3PWuvBNtqcuptUamqPI9nva2cTFqDdBvgw4uESCqnF61WCJCnIksRwQbOLHyb4uADFzVJKKK3RLi42amS46ZxVeQG0a+bQtkAmPyPLgiyXNI27btGuHr//xAA+EAACAQMDAQYEBAQFAwQDAAABAgMABBEFEiExEBMiQVFhBhQgMCMyQnFAUoGRBxUkYqFzscEWJTNjUFOS/9oACAEBAAM/AKIFE/Tx9fH2Ofo6f/gcmsfwHWs9vNcfxnH2Pbswfq47Mn6D2YrJP8Rz9Y+njtFEdvNc9nP0ZP2Ofq6fwXP3+KKElRxRU9mD2D6D9Pt9HNc/V0rj7Z+rn6B9PvR9fpUqcVsciuDXNEdo7MfZ5P08dvHYT2Gj9Yx9ePujYaAloGs0aY+VMvUfV0+rk/Tx2dPoz9vmua5+8ezbGSa72dtpyAazRNZoYpWHSnjPA4rH2OOzn7XH047efsj7oAMMTUSTWaH0Z4oKxFAVbve263AJhaRQ4HBwTWp/DVyVuIG+WZyIbgDKOPL9jWKlvry2tYvzzypGv7ucU9rczQscmN2Un3U47OOzn6B29K4rp9nns4/hCTknJ7Mn6ea5J7CrBh5EH+1aRr3w1psGoWyz2Oq6bCXB/TIqgZHoa1L4EvBKpM+lTORBc+h/kf0an1T4siupV/0+nxNcy59RwgrvtSvZB0aeQ/3bsz2c/wAQPscfSO33r3rkEHmg4oUPWsVzTsTV1NyI2xVygyUNDVf8PobVxm80eYoFPmh8S1pfxR8PXWlalETDdwgL6pjow91Y1p/wxp2ow2kym4ubKOGRwNpc28JUSAeW6vxX9dxosQqqSScAAZJJrXLxRNfYs4Gx1UvLg+iCm+GdGTVrXUVu4RcLBOmza8TOu5Seo2n6R9HH0j6R60PpNHNGj9B+0QewKcGhWaNGRsCk4dxQUYHAoEYpfhTX0mkGbK5HdXa+qno37rTWUtza9yJYM95EX4LRzDy9MYwavNOuLi+Xc+2FztZiRtI2j/vWpa1eLb2Fq00zHkAYCj1JOABUfw2izTW3f6iYyxlIJRM/pi/8nrToGQI6tnBinBZopfJkJA8J8xUFzoFzphmJkurYtITGAGPn154PQ1LazywTDEkblHBGMEfY47D9Q+gdp7R2Ht6fYP0svnXrWaDHOKAUdgrNPc6fF3kw7yxTbIrN4pIWbgrnzSrLVLm3sZJQqXke3I/MqORg1o/w1bLa28ahVU74ypEjkfq3Vvue906Turnf4FmZmSf1j3cAE0dQ1ETd2LfuuZUJDJC7dcbunSrLvWi+Y70EsiybANxf1IOcChYfFl/EB1KP/wD0ufpGaH8V0+gfQy5I6ViufpG0VwO0UyAMDgjoaguVsdVST8UW6xurHPijap7jT0ntZHeSWNQYG8QBx6HpUcmmXct3Avep+HNGeq4/KVq8NqJ9SlSC3JLBCcE+59TS21sJwkEFqsTPJcbgXCIOWak1/wCIL/UUz3c0xMYPkg4X7I7Af4gfSCprGSKwfoINcAZolRXHaqKR6UZbuezc5Qr3iexWrTXLeTSxetbX1ioVpNu448iT6VdXGqQW85tVu+A8652SovKsVHnWhaZGs+tXUbTAFt9zIoTHsi5xUes2b6BoClNPLk3Fx07/AJ/Kg8o/qI+8KH2+n1H6MCgSSBQoZ7MU0J3Co2ABODSOoIpT51BAMlxmjcuQh8NRR6ztkViZIHRCDgBuvPrWqz/4hwLps8tuwCTvKhK7I1GWNakusz21jdtFlClwUwOD0SppzmWR5Djq5Lf96x9I7cfwPH0n7Ax2isnFChk8UPT6COlXUYwshq9PWY07kliSezbrdp7sR/wa0zRNJlv/AJSNbjutkk2PHLt5RM+malvLma4mOZJXLsfc/d4+waNE9nH8HluzJP2sa3Y/9T/wa2aFYqrEj5g/8LWft5o0aP09PvCsV70Pr5rmsk1z24recL4j6CviS2SB59Ju0ExxHmJvFXxhcSBI9BvyT0HcmvjWAhX+H78E+kRNa/pzEXel3cRHUNEwoqSGGD6Gv/ebH/qii3w/aE+V23/K/a6UWPAontZBnH3Ofv8AHYfXsz2ar8Sv/pkCQg4aZ+EB9Pc1oq6dao141rcIgM8rg4c+eN1f4d/C/wCLcXUd3MPNzvx/Ra+HNGvHez0SyulO3mS3AI2+hrTpQCdAJlVSFJfhTSXckffRSW4Xzjk5FWM0aXYmj7tFBaQT9ffHma+HbywjmkaOeXqBgNuHpWm6ndQJaaNaWxMrMbmKPY7hRjbW3V7E/wD3Ct/w3H/sux/yO3P1c10rwAkcmseQ6V7CvYVleld02fI/TjtH8OLu6ggaQRrJIqtIeiAnlj+1N8N6XDo/wrEkaRJse9kXxyHzKDyrWdXkMl/fTzsf53OKBry7MGsVd6ZKjHMsY6oWxn+or4S+ONGl0u8V2faO7c4FzaHnxr/OuetX/wAL/ENnBPiWCSVWt7hAdkqE4BHv6is/DFz6pcxkfZ5ppp0UDitqDjmvbt4oBOn1Y7OfoH8FxRH2M1NZzJPBIySocqynBBq113Sngv7SCaSM52uARHLjAlT0JrdoGsKP0sp/s1AVntJOB1qeDb30ToW5G5SM/tnt5oq4JHWgUWgPLs9qFLsrH189vv2e/wBnNc9g7c1z9yez+ILHu3ISWTu3UEgMGB4NfEGu/D2rSWlk5hdGVZHIRCQfU18c64yC2FhtJ5Y3I8Na58yqa7qkUAMgVEtR3rPX+G2l3EUF3eX0MM0QAuWuVGJQfQiv8N9EvhHpcE14sfDyXE2Y3b2Ar4N0VLfuP8PLTvoyMXESKOR7uDXwJ8afLf8AqH4RZ44D+CzKrlc1/hpFCJNKsrCOWMeCJ4FBPtyK/wAPmhmbWvg6D5m2OUSS3QBwfcVYX2vX9xp+npY2rzMYraMlljHoM1tZaVl9/owDW4mufpx2c/QT/A8/bxWi6r8QTwajCJJVgMlqCxXEiGtXvdMttJkiSC1tuBGoIJHufOjZ3ASFjHmtYsJvmLTU7lJAhA3NuGPTBq71tjc3l3PfX/I3O34UIHQUIpRPc36GXaeo3AD9qiuQ2L12Gf0DINf5dZy3d1OY7aMZLzNtX+nqa0mHS5jb3MjTgOFVl65BAK+lfEGs6faaTr8iTQxQlEuSv4o/c1udmHIJNdK5FbhmhgUK2ocHmm5rn6ffs57Pftz9nHb7/Tx2GuaPYaNHtutG1uyvLbHeJKBz0IfwkUZln+aJMgBA9Bio7+KCaGdZEK5YhcBT6Z86n1O4On2siJ076TIGM+nua0b4Wsw9/eCOBRxlss7Z5wPM0b+3nsNFsvlYJAVa4fmdh/4rW9JcvY380LHg4atY1tlbUb6a429FdsqP2Fc1yKworpWKxQoAVmhg1g/xuaAo/T7V7dsst9axxrudpkwPXBzTtJdIASTFIMe+KHwn8LQJPKe87kySKfLdV1f30tyZZFLNlSGIIA6dKuLgDvppJMdN7Fsf37eKNc1wKxWRXT6NzGvF2n6+ft5+omvavaseVe1YP2JYdQtZIm2ssqkH05xW/UpHk2gLktipZDDAmRHIS3thfL7XA7c9m0ZrLE9p/iBgDFD07MjsJ+vFf6y3/wCqn/cVMLt0UHxtt49DT3GuXILkpEe7QE/lA+zzWAPpPSjR+9j6B9sY7R2Dsx2Zr/XWo/8AuT/vXcXkkqOBjdhq766lkLZJY8+vPWmifa6lWwDg+/PYOlfMMUB8WPCPU0QxBGCODWfo8I/geaPZgdpNNTU/oaajRH18dgpHi7yP8w4dfYfq7MdmayatrKIXl9bmW33hOH2MoxuLgfqAxWkaibZ9N3R7p07yOVcyDzBB6bTVut3ICSGkmK4/SMjqauo76S2QCRg+ModynPvWt31mZWtdohXPfyOEQp6En0rRbS4ghvdbtneclIo7Y97uk8lZhwoJNabo+tx2N7FHPaxsUkKrmSAk4PsxFadd/ENxFY2UTaVGGZp5Zdjoo/Vu6A+1fCuq6TdX2n6lKl9bbM2sqDMwboRto94+5T+GhZgR6VzTK+x1II6g1gYrCindgqjJ7MxSD9iKFZYjtL0KX0rB6Vg9PpJNHijRrFEms0T1FZrI6U3pRXqKBor0pl61zUF2o2HZIByD513ZKkHIoYqa8t5bqyVnt40y5bAKMBkgiiTwKnlbheKdLgZ4Q+En2NQd+IHmIk3beKNpdSQhw23zFIzky52YPOD18ulXdwQI0JJyQoIDED0BrT7Wyub+4twzwoCqTEgEfqYLjL7fQVpurJOttpTTiDISN8ITbOOSoXOMHy9KurOO02XwW3jfY1qYFJQMThVkIzgUYLqN33fLzoQJE9QM/wBKh+MrQ2NvaKstmgMZ75bZrhv5Xyea1W4GoJc3EgNq2Wtt52qOhwBxxTxkcFcjIqK7t1unt1kE2UkfoyTADxcdQaNlFNEJTtlADBR+YD1p7B3uN5SN2VZJkwzxp58GtL1b/X2RsJYZLV4JoiGhunZRkNjz5HOPKvhPS72BtYQ2M01tHLAIQbqHDLuDgjzPpWhGa0mtob24W6m2cKEKhuQ5HPBrQLWVraKId8Fz+M4DE+wqxuizi7iODtKxDcAR5cV3W8IcA+Y60JxngSDr/uo7x6dDXcyEA5BGRTMenWn9Kdm5FEgYQ0yfmQj96X+WgVPFEeVFTTHyp/Sn/lNEj8te1ECiKJpmP5abPIoeYpT5UD0FcdKH8tAfprKniuoorTHBHFCeIH9S/wDNCInMayD0amsEkihk3W9zjvY8gPtHlnyNSGYxwkyLnwsBU8K7EZgfOpmBy56Zo6bpU10skKTBFjg5GXYk56ZzxWp6/p8b3Fq0VxIVKuQVVvIFj5bq+JtKsUt9LtEvNtyPmowiu230APNXM3dahHZIl3sb/S3iNEQDwMOVClfbOTV9c6dDqGrT2UuqQSnbFbCRXhii5y5zgr5DFXtxffPo/cAuDCR+G3JxtUjH5fOrfXr23t77U4YpjMDJPImAx6D8o9Opq6sZJbqITXvdcmKEj8Ren5DyUr5mOdLG0s7W5hJCxTWsRUsTyCDytWmtamsupLBY3J8EvdZMFyjeErwTtavlzuglLCJhHvyZIWXqdrj8pTzU0beQpvV9pxuQ5BoE1eQO8dsJHEqlHjXPjWryeHfLayLHGBmaBGJyAQpKjg+5FatHozSRENFIwthb3UClYl4PeJx7f0FfEPwld2V9qFkzWk2DBNgokieexumDVhOm4fjCSQyR54MZ/SCRjpWpWovruwtYZcxIJEGMb15LYODz54ozWult8iZppzibu23BBnxEBckEehFKqB5Sy5GQAOSB584qDbhmWN26bwW3D+nSkkhhgNgisvS4XoVPqehNG4khUQspXr5jHrXcyN1CZOCfOvPFMvkV4okYJJ/eggXHJPUelcfloP5VnnbRPUVj9ND+Whj8prHQU58qd+q1g8rSY/LQ8hW2hmsVxwaNeeKBU4FZ6rR6gUR0HFYaMBsM7BR7n0FDvmQDAX8x9Kt4ZozFCr7ADnPIDeYJq3028gjtI4i80uSBxkDqxIqa/vr+2sooHnjlycnCrH5kn1q/vZFtbO7j3HKtskVCobgqf3HWtSm0uyitoUNvEgjXY+4mQHdlgT1961a30qCCe6KzbiQgYu+xjnL8kLV1caRLANZCz3ZLzpJIUDAcDa3QNWj6JZvod4snc27juHMXzjD/AHKzsMVFLb/5ouqPqNpKdxtzF3G1n6HaXNQTXsstuveoF8EkgyUB65X0FfMagkaOZoR4nYDBK/tWqzawwj7+CZSEUAssiqvAHqKU9zc3IkYyKg7yVmJkb0J6k08j3y6gQlvDFmDw7wSPLIqMJ8tBaj8Th+88SKF8wDWgXN5OL+3S1uw2Wa0XugQfVelaBHC0rxXUyYypQ4OPcGtAcy9zbyWV1EfwstliR061Jpdwk19mXLZIBIXirjVrWOVIjHBKmY2U4KD1FRaotvbxzyOE4AkJPNXkG6zm7sujeFMc8+latocsE1yncyM2Y1zhgB54XyNJc2gutPQIeDOqHlH6nrUF7YWgbU1nuVgjeQBzK+OmS1WWnW8krW7yNtJ8ILsxHPlSW7219pz3CLdQbZIGO0DB/MKMMEPexmQSw/ivjlWX9/WtcGltHGJjAkYaKaQbJsHyf/sDUOrWF7a3hZSY/wDT9wmyZXB43YwGHvTaMdTMsM1xkKwjJO/rgt4gcAUtzDHMvR1Df3Ga0uG6NtNeQwzBC2HbHhUZNWOqQfMWk6Sxbym9MkFlqLkEMfcYxUJBG18++MUwPSjjoaNMK9qJPSj6Vjy+jaaHpRauKPpXqtdeKBqewa4vJrpWteTIqoCV9K1O6gtpdBe2lRVLOkwKlmPQq3UYrV72WILLidAe8I/LI7HDBh54rUNNthbI5dwp7whAWcn3qH/Oykum4bPcpIWO7k8A0mh95HFLm9u+ZGHAVP5f3pi+dx3H3qaJy821llDIBuxsbGAW9qMF1JDPMIonBVnA7zgcgD96Bv0EY3wliBxgUsGnKk9vELkAqXx+cDoGrU9QwJ7lmRT4VBwBUttIro3PT9xVrYwwSQ6eHS6X8R2bJXHVV9CK+FrPTopNGKrqqDc8k34rsn7n9Va/qE6TXcvRvw0IC/2FaxCXex03ULiUE8gNsFfGQulOoJJaxMRvUqEGDWhanNFDcTRzzxx+Cdzu3egetejVNNW9tILWbG0Kh3YX0JqCw0iG5juYpblD4n43GrnUYMSYbackn2rU3gWCGQhYFwoz5VefN7rs5i3YJ9PeryV01WznaTd0K89KbVMfP3BgmLbVaQlgXx+rzAoaRdTW+rGSIkArsyWXzDLW9XmittkWQMNAWeQeQDJjlqng06KeXS5rdVBIDsOQRwWBO4U853vBEshPgSIeEKPSor25t4NTtkeCQbcuNhAPpWnraTvbSBg7mBYXVDKUTyHqGr4cvGVNLszDf96Y5EaJgqt6N1xn2plW3gjK2l3bOY32KJA4PB3bh0pAlze315bFn4EcZ2kbOnHSptZhvNuoWaPPd94Y8nvAiDaFr/0hoNnDaWQMTHDNuzk+b59TTTOqajDEkLFsXMedoB6Aj1rT9LtEu7h/wnA2leadvia2vdMWUw24wEY4WQ1oWrwxF7juZnTc8b+EIQMnrVnaWE94txHIqRF1AYHNaN83O11LtgVM8DJyKh1OzhvLfPdSqGXIwcGmBoUtYrHaOxo4m2oXc8IvTLHpUiwR99jvdgLY6Z88UCTsUkDqfIVomnEi5u41cOYyBzhvQ1YWunT39nDJeRQNtlMeAqe5Jr4ggnkMdyXD5Lo/iBqT/LzLeTpGQTgKPWp4LxmsLiRcHrV6LyH5zxoMc4rQ7Vbm9SxSRpsGM+QejrN8kwj7tVQKFzuog8VLbRvEw3RPjevritBndH1HTz3SOpXZnkep9cV8P6dqYj0eO3vNPkCuoKGMxn39xRuJzsACsxPFSlQdppg6llOBTxO0lz/8RBAXz8XnUEbNDp0CIc8ynkmr9rhJ5JGyjdc9DXxRMgSHVLhU9FOK1DUAEvLmZyCCWkYmp1VI+8I7sYUAYHFXO1rq5uiZSm0LnOBVzO7d5KzKWJ5qB13Gbao6irGabbAAgHn61JdyyqJAsQya1AW/+W2Ugfu8khvMVp97ddxfwIHzjmkS6EUVxCsePB3iA9f9x6VreiXqO8UtzasU2To+REW88pxTSai893qszKGOA7EsyVb3NzuFs0tvnwuzYq2EsMEcQMaA4IOQCKvP8ySaG6dGXJz5qK1C5mme31VHaVywUjYc/vUb288WoF0l2EuRgOCPMOPKkdUt7CNoUT87hiTIfU1NFIZg3iIwTV930cIjEyv4O7bodxrQ7aWI/JyJOQQ8YfdErDzNX+vxW9qhdEjG1I143YrWXiFxJEWjHJCnkVPey7ULiONQgHoAKe0tniV3jUpsznORSO5eG4UEDPi8jXxBpiwW13ZwzW64UOPCcCppdfeO7s//AG6QqFx1T3r4bm08ahHeAQAkHPByvUV8Ny3KQLI3iON3lUN3CksTZVhkGjnpQzigKAR2UjwcH2xVv8J6lZ2k9t3iy27SSFc7gf04r4k10LEZUtonyB3OQVwcgmry1uDpuqztLC6lI5G5EbeTe4NWd8YLbTZXkghGWKsU3krja2PIVdziVgUSJ5NzHqT7Emr42V5pqSOlpcyb2jU8cU8cnHGaljgKjzqS4bJBxUcalg/iHlWo3/w03cRBokc5NHuCxVgQcE1IF39BV69uZ0hZ48kbgK1aWS1tAp2P4F/rVvpzmN3Ergc+xqGN/ElRxx5GKtrhlgmHHrUhLxwnCAAcV3jghThetKspieJu7l8iPWtTtVeeyYTRJ+cDqtXju/fo4dm24IxirnR4UmlsyqupC7xncfWpMMXP5jnFAUc8GjFb5/U1XFye6MmPLJqKxumMM7K6jBZeM1LcSKVJGPOu+Xurk7h5E1JBYxi0uJYo3/8AlVXxuFX99thi3PuPDt1Aqa1jiRp1Xd+bPQV/k9lFfSNBNaS874+CuatZm+atyrYJHJwAKjt77uYrjZ484X8patVtSwKoVI6gZBqC6tRcXF7HHJ/+lVOf600jgxNkEelTRSoUGVGN5z0qR4sWue7PLnPnU1leRT3iF0bwqkfJwa1aynWK3lKImdq+RX0NJszFbrkjx5XGDX+YqZQNpHl5UkEZRtwLdcUvCgkgVImFU8Gj8vseVj1O3PFS9+rj8u4Vp66Za281vLGVwrNkMAAPzGtXlmEGiM8UIPL9C5Hp7Vq+iapc3N9cSXEbjDwMeD+3oatLy0ubiWxeNowu2MsBnNfE10usRm8ik+cTZD0Ai6gge+DXxJq0qxXDXN0YgVXPiAC+lXemzySywsj7SEV1wDmpCndGCIKep2ULhi6JtiPi35yij3pXljjltf8ATIcNID5ZxurQ7SyEkDxzMdwAJIYA+oozybkj/tTI6rUsFnvjy2eoqTVZWDybFpNKhktWui8cn6R60uwO8hVc9BgVYajarOwRzHg7Wbg1CuhSSxTWttbAKHRU8XFQTxJp9kYYoEILPGPEze7GoIoo4om3v51sPixzW5SAaKSByeBUTrtKmltmie0AZNvjDCtOvbmJb+NEQcCT+U1HpLvYzuDDMSYriP8A4Jq/nL2sty0ySvvR0QFv2z0FGJooLsSDuxhe8kDVDJKxQVGB6mjK+TwoqMPsxwtJCh2DxetJIx3dTTXB8BqWcAxON48iavtPZY5mBVvIdBTaagiABp5o2u43befQ1NcaTNpl1K4RuUzU8CLbIzGMnJYHrTo4lHIpYCNwDKPJucVomoIwezimcjrjbiv8vgRLSEIozwBmr6bUC0tuO68zjqK0y3ufwWHdSY3Ky8ZqysJRHa7tzj8yHpWnKirdd5MzfqY9KKylUiV4nPBz5VHA2EkKtu/KK73O5smgsjHNbeRTuxySa4q4sou6QZFXGpLvE4PnjNQ2j4ktjJMPM13sa53YI3kjgZYY/wCKYExiNmDg4J45q5trcd/MUfrHkkYxVzKipNMW56Zz/WtrVa3D797goAQmN24jqdo8qF9Z30UgYSd2z2g2AAuvOSf9wqclhOEi82AOT/U1LEGp7qbCIXc9AKvIW7q4iZFI6OMVbR2ctwrgNjpmrtJXAfIyaubsASuTipbJWXvG2nyqa5h7gORERyKDBe7QAjjIp44w7Hk1JK5LUx8qE0wjKnmoJNRR7mM936EcV8JX8CXFtJLFKuNyKTtatC7rZaJP3grSobJY73TZWljXwOaiW0+UWAQlchWX0q8eSTh5CWPJq4HD8GjGeU6UEJA86O9iaMTAioXIPnTBcR8VcRzBu9YVZdxtnUyP5k81b3Oe4iOavVh/IcV3oUPIB7CmtYAozW9dj80NhKN/Su4nJlbFWt5JtbBFQWLjuXXH8tWt1xOnA6EVHqmprbg8McKavdAnjcAyg+Z8qmfapAU4zxUkpJMnipLTJd8mlLZQYFO/ApY1BJ586JPHAph513FyreXQitAjj+cuHdS4wyo2MitHdAlo7RgdA3Oa7p0Y3QO3GBtr590mtXViVAxUVmYxdTfmGSV6itOmgjSzuUAP5i+S5NWlmY53mIKcuy9CPSrC0tWu0RBJICp5JZuMf0FPfrsVAiegr8I0DrAzz4hUEjx74kb91B8qCQ3IUYG48CvEfo5H70PlhxQOeKTaPCKtiQxhjJ9doqABPwk6egpAnCgUnzCeEUncHwjp6VH3o8C/2qA2rHuk6egqIRSEIv8Aass+a8Zrn6MY/aslqQ9VFAQvgeVAucgfmoc8V4+zGCKkEv52/vTmTljWYjS/PKcDOetFh4jnjzonUHrx0fmGrK0BGKO81z2eIUDo6nAzivGK8BphMniNMZzlieaO5aYxoCSRiiXAzxQr/8QAOBEAAgECBAQEBAUDAwUAAAAAAQIAAxEEEiExBRATIiAyQVEwQFBxFCNCYYEzUnIVJDRigpHB0f/aAAgBAgEBPwH6wIPox+Bb4Yg+nnnaES3hEA+nnwnnaCWgEB+iEy8J+DbmZaWloBAIBAOQ+p2loBBLQDkPqw8A+sCKst8GoSFJHpMLi6WJXtOvtyqOKSlj6QG4v9KHIfCIuCJXc8Px7FNATMJjVxK/vOMYjp4UqN32lH+lT/xHzYHjPyV5eXE49StUDrMHjXpHN7TE4v8AG1KNvKplP+mn+IjNlEfiWHU5b6yhW6ov9APyN+fEMN16R01EqUem4sZgqa1cqzRKeptYTifFM35SHt95TS9jv+8p4qrRdQP5lNsyA+/z5+Qbwe84jgyHZlG8wpaiC/tK/EMTiW8+0Q5wRU1h7FABub6Tvp9x0M4dUNXDU7+3yJ+BeX+VbwlQy2MxCMmakRtCba39YS2cFToY1dF0prd7amJTeq6rqS0wlHo4emnqB9Iv428KziaaK0fB1wM+W67iE9Xuy2G2ko4as/lpm04bwwUO+p5vqBljLHkBFnEQPwzGUqyU+HFjb13nDcGhpmoy+YmIiJso+n38NpbljxfCv9ooeuyYf9F5SQIiqPQfUxB4Mb/xan2nBwDiKt/7R8W8v9Cvy1loAYPBjNcLU+04TpiKn+I+GSBGqCdWCrA30DeYnFU8Mt3M/wBYpN5FJ/iVcZxHEkCimQTCVMcgtVUN9zOpX/sEqV8Ym1Mf+YeMYpGynD6zD8YNR8lankaUsQKzuBsJi/8AjP8AacN0xL/b4dWrC95mmaJUiNcfPuSAbbz8C2IfPXP/AGyng6FLyIBLaQKOeQE3mJwNOte3aYvX4cxzJmB9Y2IpYnCuyH0mBNsT9/hVWssqPqZnmaBoG1lB7/OHwZR4BBzqItRbMJjKdbBMRTbseYTTE0fv8EzEtYSo8DS8BgMw+/hHwbfKW8ePpBsM+mvvKKMtalUt2g6mU61Or5TPW0eotPzGYjiiKbUu6LxemFGYawcbw19YnE8G4/qi/tDVQC94zdt5XN5U5XMBMpnWUIu3yt/Hbnb4PGar0aAK+X9UrcSZ0Cjadap/cZS4jiaZHdK+Kr1Td2sI9XMMqoYbpoVlGm1d8qLeJwmv1RdbCVaJyCw2h8glWVRPXnSGspRfod5eXl+WNVa9CojeolXB2ayxgaZysNZSTIOow+0RMRi3siTAcIWiQ9U5mj4ai+6CU6NKl5EA5X940q7yrDyRdYiynF+cvM0zzNM0zzPM0zTNM0zStbpsb+kJUOL+8b/e4vt97SjQpJSClATESmuygfaDwGPKkqwxRrEEURIvzbOI1WdSGpOqZ1J1JnmaZpml5eVrGk6n2mI8uk4TRAJeXgMvLy/IxzHMqQxBFESJB82ahMuYWmeXl5eBoGmaAy/Kt5G+0rKLXmCUJRHIeFo8eNMsVbRYsT50mM0vM0BgPO8Bl5mlU9jfaOtxaUhlQRTBAYWyy/JjHMcwwQQCIIPBeXl/i3EzCAj4Lc15DlbmgBNpiKbIhv6xgTFHaPtLEGfm2uBpEpGoM0KC3dvBppC1hGOkdo/NYIngLwvOpFqXl/CTLzNM0B5M9o1SdW0WvPxEFa86sWpeA38DS0CwDTkBApgU3nbLC9otDIb7Xlej1FItr7xaV0PuIKZw4Bb13iZFAsN4doLgzfW0dL//ACdM310nTqsNNZ02N83pGViNoylPNyXeKIkuJmEeoI1S86kzwPEqxX0mYQvOpHqTqzqQPM0NSPUj1o1UzrGdZpTrGB4rxKkDXjG0Lw1DeZu28WtbQzqrF7tph0DmVcqObRAt7vpeMoZMn77wZV7V2iarlMcMgJVbi0Vk8p0JjDL59RHqGmLJqPT9pQxPaA0tfXlaHLOy5EKCopA3lJDcz8OrCz+8OCUZrN9oVIbWAxXOtmhq29Z1riNVN41Qg6zqm86sFaLWHvErzrw14a0NadSZ4Kk6setGqRmheFoHiVIKs6hiVolePrMrNsIRY6z0yxaFRzdhZfeJw9ctyZRo06Y2iimDmJ1mVC215VWzDt0j0Kr9195SLXy5LH3i6bx37J00yxiSbDQRyPSAHMb7SjWrr5docTV9dIKlT7ieddBGQox11lKsybiIwPcNopWpoJcA2MroVcm0pgv2iU6FwVM/DqW/xnSpNDg8tRGUfeY7CdbJqBGYoxH7ynQrVRdVuJVpPSNn0M094KoA806rTqmZ2mYwNM8zzPHYwtM0Yy8vFaI8zxHi1DOmtQWtrKdBQLOP5jUaZ0tFo082otKlHs80w/cAfSWHtHCgwntGQR/LrOmfQxKSgabxlE7zfu2i5v1nSVOl+mBA43AEanSA7DrPzqTdo0iuhGqkGYcs7m+0C5TGCkyrTBGkw9YJ+W0zZD2iZ+pYrK41/wDcVQNm1lGmSJUplCcpjGqNdolRwO5tI6duuomJwLVSFprp7zD4dadj7LHwIr1C7m5mM4Yu6tb9pQwdWu5QC1ph+HBaBRiLytw/EoxIW4i4euzZcph4U/TGXeOvSOUy8zS8Yx2MzRzLy8opmbWEAGAXlPBVn2UxMC/UCMcpMahTtGpMD27SnR949AQUi5sT/EopkFuTIGhRhsYKB3JN4mkvCY//AEwUs2rH+JkT2mVYosY1NTBSHtAgHpzqVMnpCEvmYWMKsBdZTp6XKtePlK2vb7xW9AoP7wZrbwAzKCpBEZRsEaWIIyxF95kEemLb2jIaglGglK5G5mdfeXEyqTe0PtKnDKbktfWVeGJk7dxDga2YBQY3DcSFJtGVl0YWjqTMpHpGF4qAeYEzBcKGKplgbSnw+hhvKutvWYrhyVRmQazAYA07mosKL6C0Wkl8xGsbaDkYGUVdTAZcGEgHeXHvM3NtovJjMytoQRLqBM1NjvF28FW1otiouIE0lrQrqdJ5NZ1RU9JfW0zMIp95oZmmcxmuIjBd4zCCmresyWglpllplHtGF1Ilfh7s95hOHJTGapqfaYjAUK6Wy2MbghWooVtJ/peFBpm3liLSQWXQRuV7S87pfleFwI/c2a0QmO7A6RNW1JluQgEaWlpUUjYwAt3D0jMIlPW8XnaFYohOkzTMJkzxUUGMtnuJpvC8zTvBiuI2qzIxGsRXted0BNoIPAZkvNubQKvtyAj6CF9RM8YawmwjW3gJZ7RU0mSNTvBREtDEHJzKlQ/pM/EVV3n4hvaI7k6GFLsDBoJceAwCWjKIaZiKVMa1+VpkmSNTjLli5jADM1hA+bmOd+biA1b25qxEL32ilo7FoqQJrG3lXyy5vKO48AjT9USGVCZ6x+VKCMTEg5DmObT18Rg5P5YkG3JeR5Dk0XkOSwQwcv/EACwRAAICAQMDBAMAAAcAAAAAAAABAhEQAxIhIDFQIjBBURMyYUBCYGJygIH/2gAIAQMBAT8B/wCyz/0LXmoKycWiHPlqZRAfJsXRuT8isobLeZuiMV38guusUpFUPxy65MrjC02uZDH46y+lj5FLgb5Lw/HrFll4li/K3hEy/MyF28yyPYXldi+z0iYyHZ+X4fdEVQ0Q/V+0iul+JRB917S6n4pcWWWWWbi8OVPC6m/EofRRWXC3eF0sfiU69q+m8PxS81HF+YQ/Mw7khpofGF5PTjZtRpRTJQkmbHJEdFf5ioJ9iKRPTuNohGzmyn4Os7WxrG0aQ0zSg5WLTm6NLRXyOddjd/TT9Oor7G5an6olv5TN2GzTmkuS41aibYbh6em2v6S00uw4VisP/CUUUUV1JWVQk4rgaHwciRKDbFCW30ogmmn/AAk5NeofAts+5+NqSkuRP64FHf3NTSS/U9SwhWc1yRntkjUr4JyTWY0x/wDE238DXRXRXRXQlmuiistGmbbY7Qo8r+k9t0isWzT54shqwh6WjU2fsyTsSZc/sTvuaYn9GtCD7rk/BFLsbYoSqVicX3Jwi4eklx6TmPLO/JR2ZuLsfHwft8ZrLRRRRRRRRXsV0OFdxRR2LRpz9S4NZ7ZPjubi8Q4bLT4ZKbfGOF2RKS7QXJCE/lD47IjPUXwQnCS9RPntJE1SEzcQ1HZOn6kVuQopWmQaqjbDvtJ6jXwRnfwKmOHJ/wCDivcr2XlTl9inS7onqEJ+o3pcmq97whSX0b0SzD/cb4x4ijfL7FNkpsUmbze28pI4UaEyTfwK7Jrt6iWL9SN7+0bl8tEpOyxFl9dl5rNm4sbLy81emxlG15eI9x5qj1fRtkvjpQyxSNw+SumsIr27N5vNxfVQ8JEGuxOKIRHdfGESwiyxNfRaETm3x07i8VizcXiiijaVyPF4fVfsLO4SsUTbQ3THNkZ8G/ESWII/GLSh9H4icI12Nwx+xaLRWLN5uFIux4qzbl9SN0M7eh4RpYn2H36VmGI41My9mI+3SxdPyPrXtf/EACURAQEBAAMAAwEAAgMBAQEAAAEAERAhMSBBUWEwcYGRsUDB8P/aAAgBAgEBPxDefrnI8jk/wkTwz8s+LJJJFllkm2WWT5MyzwRyDxnJwcn+Rnh+WfFhJJwWTZMTOHySSTh4IQ7g+RfXB/lZ4fhnLwzwzJwWWWScmeA8Mggh/wDGHyZ+BZ8Xhn4HweCcMkJLIgjlBwcnyfgfNn4Hx2234A22PgkkzP8AEAIP/wAIj4s8nOyy2y25LbLbDEcZJZJJJJI2uQMY5Hk5G2223ll7+DwR8Xkm223hlmZ4POCI8gsmSThLLLIIQQQbeOG2223jVjhO/mc7wx823hnk4IjzlJJLJ5IiHg+a3SZeH4F9aRf+oa/3LpsvPv1YX6N52Od5f8bPJwQRFlkkkzPJF6hyGEzPDwRwX0iJJQ6WEc7zHZG43qmnb3/8+SOWeH5PLw8ZyHADBBzkJmeCIi3lJPiCzxAMy6tx/r2fs3Sl/wD0PyBFzP1ur/8AMbEM8+Dxk8Z8GeEsksbGzgI8iLeWYT5Pw2G2+uGZLJmZsQ+1Go0NdJg8HYTYYu424x7EZut016fl9piY/l/C28tra/NssJLJLJLIIhhhttt4ZT5M8kNsPLxnCzktcH7dcT+fMniK+btiFdQ4Hpqnp/ZCOnh1svqJ9Pd9sMWI5xn+Jsn4Hglht5Nttllll52GGIeN5Z55bkToB6hzg0iGewLAzYn5knc4Aktq6mmhCLSN782/GCPG28ZMf4Wd4357bbwsz8Ag4Im28bLx74GOBs6EN1GZZdqB/wC3YTA6AOzqXx30wsptZ0fkGGfLP8eSWtvO222222y6T8SOTgbbWWWOzxQMrDJX3gjcSOCB/TEJDGf/AERn58ttnjJskssssmZsvrnfm2WSWQQfDbbbZi2w2aRDkMeN+3Pe4GsAONh+G8ZPG8bw2TwkknG8P+TIPhlnG2zb8A+HL48w/wC7LeC223nZtLFj5PDLNnGWcZZZZxlnGWcZZZPDMzdZEmW78EE+o/1dvIuj/f8A0/xidxngS9xsJlttsvDJP+DI/wAbw2aybdz6L7xf7S0v01P/AG2Zf2N/P++0N8al/wC+Rn9pmpCUdOP7t4Yf90/+x8ssslzWwWRbvEe6M4nNbby92WWWTZ8As4yzn2yzhllm/AjqW/tdeiz9A+8sIMCBjmsLAvrs6gIFd37JqbKf3YCzj9Z8s52FpfS1vtvfb+t1HbRnO227znwTfhvw3gg4bZ74ZM9wHARCHKIiJP327J5X1O228d/Ub9xPA6lQk1tGOOyzQQ6TbnxZZ8mfI7g42yyyeE5yIGQQfB/7g0j76f8AhhKYaygPSx2gEsLR6keeXvu0QZHkBecEguFmY9t3vUBwl4FsTjOTj6+Dw8+W225E3l4ThlnAMIIgsss4GrpsRDodBDGgf6csS8eb3sDYvp9t45P2NnEn+2Iab9EZnHHZ5N0LoWZhe29p6gROw4F5m95yLLOrLJ4ZePvjYeAz45PJl1dQkJYsWLFsQXUZSeuW8IMyLcP4tiHvNDoL8Y4HhNnj/ha3YfeGz2f2152LRu3afaONvcjD0YZl5n5/XLwyy228EHzZBJkX+9/vyH9fGnpAIzdwcRE9OH/Ee4HfVu97+MseHnyfXAwMPqMhDrnLM+a2yz7P+QH3YTX4BxCnGat25+ATZ+veSgOyOIQ5OvPd9g7bthl6h3ePhvB8GZn2fZ/yOS7Ys6gxRySwuMNpwW5+LoztNh2UOxHvCn7K7satEIYkYttt42LbbZ4Zl5yyCw+e5wttuFPaEdxpClh2uMM6lFmdX0xUgPWDGwXst4vfh7MSAtk2zELbbbFmA2287xs9yRHCUWrxlLbbYOFm9RbBYOBEBLu3D2Zc4EMYXPwmcPxHdD/x3YvP+wtdP1bg1D5lhdcvve3zjBCzuL1Ej5Z5wuEBfmx/cCgpHnwEk/s01DKcBv2cvbH7gft+i3+/DZOrTyHd1NmWI8QSvWS1M7mYkKj9OWZ9Mw9R+O8gxqDTVlQNWwm+mO8JZN/cvIbsU/Wef0tbFhO+nY7RL+s7lgRj7XLrcgdtd/pNgM3yDTbRi0uuX9rKF9xL2f6v9pB9tsFgR3f0gJJ939JUais5Z/cf7BOkYZ94mpZvsUUxM+3qR/xolhbW0TGvp7KYlLkOM3+gJ00/9bIkZUmA2T9+d6kxvYz/AInodG/pWuB36/2CMe7YDhLdtvvv+xrqdfY3SpPxRmZZg6azZjoJqMkR6OBBowcYu8VoLNwe2O0SnqH+xfbDTJgeyf20+5P20+7EGxlhJs6eyvBrZQFtFZ8T7XcdC60ZL9nsuSAZMn2+X2yy3CoaQhPf7KxwTq6GE7J5jO7w/rZ5IBjO4+kP3LAwYfSxvUX1dJ2HhNTWmxgv6ZPhSur+Jyg/+c2u38WFenDD+3nIsrrHj+nttR3rp/uCoZp6XRkD/QwjUGB1iLa+AJrG5aHq9Y02xsO4eyp3dA7LkLIUttEp7PHbuQkOP9YT7LAw+xmqN/HUA95Y3aPNs9hwPLWV06/6tuoS2z7l+46NY2Duw/Ucxn6ZxGpR/wAIvX0fXUAel/3AB/pWUBiJUU92g/qWMxieoMjy1Cdy3Pcw9HdnbU9Z8yg9sux7X/gSqHp9vY9SR6zAjB9w1BXlohrfjkg0Lr69j2McA/t28DoPyEIkH+89hPG0/P3n5IfB6QgbBbZB/Uqp2e2yNEOd8tcK6bbakxXRZs8jhQuGTl9oM86J/py6SWCgnIOobJcGTJ/q3Lu17i0pnQf09Qx3GIQi9Z13vJGYj8dWXUQYtAAjd63h/Ow2J97J3IMNLOCE+7ei/wAtP9ADhPorHyahiPQSHkSd14UgHVH3srNd/vcqbnf4ZwaL4WEUwZEXZq3bmNj2wS8Z3/UXPeMXHu7VYHf9ndxN2IYb5IqF+Mh0X2ows52PMct+7fuO3bHfWt0kHtD7mjvehIRTI3EwZbekMupGAbmQ7u9XkGxiBn6hbW2IsGcEnTe4H7Z8o41/jdDk2XUSXNbWax4csJmWw9/ZCDQR4cZL6PZRiSd54tnQxDKTWR/QZd0jZf36tDGrE9IHuIN9kr02Wj6IPI/Y6itL92UZ5779uuP5HVhDIElxg/iTB9wRyJ1jgHpZ8Sz2jfuamxiYF2uy8wj6lHpdttGdm+hsp4P2Nj/WWGWziRohTuEbHBdfSXu73qyIZlj9099+w+BLTCOzvVjB9mID3bGnd6ybpnX7dHwlduHj4sPZh5v1CSGQQN8OAvYXREbMhIBSyhgmHuEgCNQkbrMXLSzIA9kmYWzMsN3iduB9kQDr/ZADhH7TEEOuLMonPV3R6kukTuzB4E7HspC93rhhDeeFyHewZe2Sukyxs2Yk2UDdIx6x8tw9N35Hl+0mbYPWV4Ncm69snruyes3rvgfEb6k9wsPIiJiQL7vS9cngnh9fB9T5emYm+XhvV7i//8QAIREBAQEAAgMBAQEBAQEAAAAAAQARECEgMUEwUUBhcYH/2gAIAQMBAT8Q4J4fEjk8Hgn/ABPB+T4M8Z4M+JFvGnL5P+A8DxfLZ5zwZ8SOH1b+L4vDw+PzyP12Z9fkR5PiT7/J4ODyPLfJt4TxbfAjxZ8SeWPA4fA/LbfxZJMg4eM/LN5fB5fBs4ODyPF/Fnlnj5ZZZZ5kWX2ffg8Pk8H4HL+bPJ3jCzrjLOTzZ8nlnxPwDwz9V3jY4DhOct+b5JM2vkfk8P67MZyc5dRYJjSB7Sdvgnik8M+QeR5v6bbDHrxRtrcsgUL05Pt43IRkkxE8syeOF68Dg/Zlt522PUQ8kLMOFkpP9+AkGn3qAAO5Z9cFlhJ1PDMbxnO8nBy+e+Wc5ZwLHIjlmYr77cfh/ZT6xjPC0eTPDJd2eGcnO2/qeWQcbwPHLBgobAEfcCIYwD1645Z4Mk8Z5byebxtv5pZxttsKINvKyOocEGZH1ll4tszzln4b47+mc5ZZZZZwoYFixLt1g6LQZd23ts7sss4SecnjJ523k/XPxeWG2N4d8h0t4zgbeF8l53yOdt/Ped5OXlk43kZaXanjsMnGSWWSc5Pltttvg/qPH3g4Z40tOAh1LXKZ8D1yt7gkks438jxz9CG3wZZsVCDPe3HS216PGOHx3jII4SZ5fDbeT/CRHvnZeGyNLC9nC6uuIeW89mJnDPhfDJh53x38xzgbbZd4yzxee7b/AJc54fY4PfDZPJ804298H77bDbbbbNvl39PZyNaa6ibCBkejgMvDJ1dlv4ZZ57+pxs8Lb3b4doY2cN2vaDIlLV6yXgyvePHLLLLLLLPzyzxPDbfDbeIuzPAWWRbkwbbeGLe0c5/iC3x22G22W223jedu7ZZzl6hngYttltmP8OcZZzlnmzzsPO26XRlmbDDPC2ww928Lwxzv+fbLIsmbeN8u8852G22Zi+2yzw8bPf47b57bbbbbbNvBwzPljY5D1u7Yu/ZQ7ILOnuXvIZi+28vgcHhsvjvO/jt3ZEzZOT75y2xdkh8hlzuVafYD6x/7fQJYCBewg0NnSp6s1M4gSCzl8A8X8N4CLLLLLLLJGCyY5ZBdLBgjULqJ1ndnE7BYRB7sKnI1hlfXdou8uTZtkPqEdHqwyQmW4ygT7PazCZB/glvom95mAwS7/l3wDwsSM8kx4BZEBYsTMskm1LPOmJah9NvsGbd/cJCNiMUdi0tEP/LsusPCOkQ+QKp3t1/+8W2QbP0LtgyKB6g7hbJ9fLANae7oj8skx2J6x3+5Q+JB9QO+ok2xJIyTMss4ZZBBZZECyyxIkkkunXBA/wDLYk79IJp2XS9FuMn+m+mf7dGmn8iXUz1dm6M+Tf2sQfwM9mS+wLFWEHclfgix2YI/qzpIApepPW/bAMjB62yPWXZNdZ6XZLb9wWcHa68MeABZZZZxlnBJDJJhrMveLrh6bdx6j9QwTE0tqg2uJ9mO/V7bDFLOegvYUn9qyuqLXZGfbMfC73dZEtEDD6guuzsskvZH6rpwtkMib3Eet92eiDemYZU6icl4bqwssssQWR4Zx0tMmQ9iHtrT02I31ZMHr7LpEg4b/jd3Tg7v/lJ/a/r3d/ca+5BnC1Lg+rSMnG25DFIexH3ZaKwdertkXRsbZ7AtRl6C1OwfJD8s50ttIFiHgVkk44hW2IjF6WR1CwfyGQn0WPxss4IZdI9OE26OrF9SDVBPJek8l39IrbqzLJ7bOCXtOLLLJnjbWNYtFotWm78DKtnAuAWrkLN+5z1CGz0il2ukvUe5Ej+2Mn9oadQmz1Zk8DkYnXGGzIxLu9rzMVdRYwlCRnu3g8kOHHdks43wJPHbDuMkaXc2CUime7rd75IxFEx6yAdhgwLurDLeG3uElh4NPUze7rw3whmLZhzfZ98s8XR6ks2xZnBLqOQC6PJvMi9J5nq9yAiZ6nj0mJjx9uRiOX5fYn1w9/FjwHy+Ty+ib//Z\"\n        }\n    },\n    \"$type\": \"entry\",\n    \"$id\": [\n        \"create_test\",\n        \"create_test\"\n    ],\n    \"$kind\": \"sample\",\n    \"$owners\": [\n        \"pro2@gat.mylims.org\",\n        \"admin@cheminfo.org\"\n    ],\n    \"$content\": {\n        \"general\": {\n            \"geopos\": {\n                \"lat\": \"\",\n                \"lon\": \"\",\n                \"alt\": \"\"\n            },\n            \"description\": \"\",\n            \"name\": \"\",\n            \"mf\": \"\",\n            \"molfile\": \"\",\n            \"mw\": \"\",\n            \"title\": \"\",\n            \"keyword\": \"\",\n            \"sequence\": \"\",\n            \"kind\": \"\",\n            \"em\": \"\",\n            \"ocl\": {\n                \"value\": \"\",\n                \"coordinates\": \"\",\n                \"index\": []\n            },\n            \"metadata\": {\n                \"date\": \"\",\n                \"collector\": \"\",\n                \"departament\": \"\",\n                \"town\": \"\",\n                \"estate\": \"\",\n                \"terrainShape\": \"\",\n                \"slope\": \"\"\n            }\n        },\n        \"identifier\": {\n            \"cas\": [],\n            \"chemSpiderID\": [],\n            \"taxon\": {\n                \"id\": \"\",\n                \"family\": \"\",\n                \"gender\": \"\",\n                \"specie\": \"\"\n            },\n            \"gisID\": []\n        },\n        \"spectra\": {\n            \"ir\": [],\n            \"mass\": [],\n            \"nmr\": [],\n            \"raman\": [],\n            \"chromatogram\": [],\n            \"differentialScanningCalorimetry\": [],\n            \"elementalAnalysis\": [],\n            \"iv\": [],\n            \"thermogravimetricAnalysis\": [],\n            \"uv\": [],\n            \"xray\": []\n        },\n        \"physical\": {\n            \"bp\": [],\n            \"density\": [],\n            \"mp\": [],\n            \"nd\": []\n        },\n        \"biology\": {\n            \"nucleic\": [],\n            \"cellLine\": {\n                \"growthCondition\": {\n                    \"temperature\": \"\",\n                    \"pH\": \"\",\n                    \"concentration\": \"\",\n                    \"extracts\": \"\",\n                    \"strain\": \"\",\n                    \"growthCurves\": {\n                        \"jcamp\": \"\",\n                        \"misc\": \"\"\n                    },\n                    \"protocol\": \"\"\n                },\n                \"biosafetyRisk\": \"\"\n            }\n        },\n        \"image\": [],\n        \"stock\": {\n            \"supplier\": \"\",\n            \"description\": \"\",\n            \"catalogNumber\": \"\",\n            \"qty\": \"\",\n            \"history\": {\n                \"location\": \"\",\n                \"date\": \"\",\n                \"status\": \"\"\n            }\n        },\n        \"misc\": {\n            \"attachments\": \"\",\n            \"category\": \"\",\n            \"reference\": \"\"\n        },\n        \"agro\": {\n            \"agroClimate\": {\n                \"estimatedAgroEcoClass\": \"\",\n                \"ambientTemperature\": \"\",\n                \"relativeHumidity\": \"\",\n                \"soilTemperture\": \"\",\n                \"soilHumidity\": \"\",\n                \"soilCompactation\": \"\",\n                \"soilDeepness\": \"\",\n                \"soilColor\": \"\",\n                \"soilPhenologicalState\": \"\",\n                \"habitat\": \"\",\n                \"cultivatedDensity\": \"\",\n                \"neighboringVegetation\": \"\",\n                \"phytosanitaryState\": \"\",\n                \"seedingDate\": \"\",\n                \"harvestNumber\": \"\",\n                \"slot\": \"\",\n                \"slotArea\": \"\",\n                \"soilAcidityControl\": \"\",\n                \"soilAcidityControlDate\": \"\",\n                \"soilAcidityControlAppliedDose\": \"\",\n                \"soilFertilization\": \"\",\n                \"soilFertilizationDate\": \"\",\n                \"soilFertilizer\": \"\",\n                \"soilFertilizerDose\": \"\",\n                \"shadow\": \"\",\n                \"pestControlMethod\": \"\"\n            },\n            \"soil\": {\n                \"mycorrhization\": \"\",\n                \"sporeDensity\": \"\",\n                \"apparentDensity\": \"\",\n                \"texturalClass\": \"\",\n                \"pH\": \"\",\n                \"interchangeableAcidity\": \"\",\n                \"electricConductivity\": \"\",\n                \"organicCarbon\": \"\",\n                \"organicMaterial \": \"\",\n                \"totalPhosphorus\": \"\",\n                \"availablePhosphorus\": \"\",\n                \"dilutedPhosphorus\": \"\",\n                \"totalNitrogen\": \"\",\n                \"cNratio\": \"\",\n                \"potassium\": \"\",\n                \"calcium\": \"\",\n                \"magnesium\": \"\",\n                \"baseSaturation\": \"\",\n                \"iron\": \"\",\n                \"phosphataseActivity\": \"\",\n                \"aMOactivity\": \"\",\n                \"bGlucosidaseActivity\": \"\",\n                \"dehydrogenaseActivity\": \"\",\n                \"cationExchangeCapacity\": \"\",\n                \"microbiomeTaxonomicGroups\": \"\"\n            },\n            \"vegetal\": {\n                \"collectedPart\": \"\"\n            },\n            \"collected\": {\n                \"herbariumID\": \"\",\n                \"dryingDescription\": \"\",\n                \"extractionDescription\": \"\"\n            }\n        },\n        \"samplePreparation\": {\n            \"method\": \"\",\n            \"protocol\": \"\",\n            \"abbreviation\": \"\",\n            \"solventProportion\": [],\n            \"timeByRefill\": [],\n            \"tlc\": [],\n            \"contactTime\": \"\",\n            \"extractedMass\": \"\",\n            \"yield\": \"\",\n            \"fraction\": {\n                \"amount\": \"\",\n                \"yield\": \"\",\n                \"abbreviation\": \"\",\n                \"protocol\": \"\",\n                \"solventProportion\": [],\n                \"tlc\": []\n            }\n        }\n    },\n    \"$lastModification\": \"pro2@gat.mylims.org\",\n    \"$modificationDate\": 1680293197895,\n    \"$creationDate\": 1680293197872\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/entry/{{uuid}}",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"entry",
+								"{{uuid}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_attachment_from_sample",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/entry/{{uuid}}/image/plant.jpg",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"entry",
+								"{{uuid}}",
+								"image",
+								"plant.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_attachment_from_sample",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://gat.mylims.org/roc/db/eln/entry/{{uuid}}/image/plant.jpg",
+							"protocol": "https",
+							"host": [
+								"gat",
+								"mylims",
+								"org"
+							],
+							"path": [
+								"roc",
+								"db",
+								"eln",
+								"entry",
+								"{{uuid}}",
+								"image",
+								"plant.jpg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "pro2@gat.mylims.org",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "gatProject2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gat.mylims.org/roc/auth/login/couchdb",
+					"protocol": "https",
+					"host": [
+						"gat",
+						"mylims",
+						"org"
+					],
+					"path": [
+						"roc",
+						"auth",
+						"login",
+						"couchdb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"org.couchdb.user:test@gat.mylims.org\",\n    \"name\": \"test@gat.mylims.org\",\n    \"type\": \"user\",\n    \"roles\": [],\n    \"password\": \"test123\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://couch-gat.mylims.org/_users/org.couchdb.user:test@gat.mylims.org",
+					"protocol": "https",
+					"host": [
+						"couch-gat",
+						"mylims",
+						"org"
+					],
+					"path": [
+						"_users",
+						"org.couchdb.user:test@gat.mylims.org"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "uuid",
+			"value": "c08048c75f398ea247552e9e212364e8"
+		},
+		{
+			"key": "user_name",
+			"value": "org.couchdb.user:test@gat.mylims.org"
+		}
+	]
+}
