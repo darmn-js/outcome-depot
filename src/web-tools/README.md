@@ -1,4 +1,8 @@
-# PLATAFORMA DE INVESTIGACIÓN TRASLACIONAL BIOMÉDICA PARA EL ALMACENAMIENTO, ADMINISTRACIÓN, ANÁLISIS E INTEGRACIÓN DE LA INFORMACIÓN CLÍNICA, ÓMICA, FITOQUÍMICA, AGRONÓMICA Y FARMACOLÓGICA
+# Plataforma De Investigación Traslacional Biomédica Para El Almacenamiento, Administración, Análisis E Integración De La Información Clínica, Ómica, Fitoquímica, Agronómica Y Farmacológica
+
+**Documentación de la API: https://gat.stoplight.io/docs/gat/branches/main/osk8663ryfthv-gat**
+
+**Colección de Postman: https://github.com/darmn-js/outcome-depot/blob/main/src/API/GAT.postman_collection.json**
 
 Este es el menú principal de la plataforma. No es necesario estar autenticado para acceder a esta página. 
 
@@ -13,7 +17,6 @@ Luego de presionar el botón de login en la esquina superior derecha de la pági
 
 En el formulario digite su usuario y contaseña y presione el botón de ingresar.
 <img src="images/login.png">
-
 
 ## proyecto1
 <img src="images/proyecto1.png">
