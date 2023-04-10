@@ -4,6 +4,10 @@
 
 **Colección de Postman: https://github.com/darmn-js/outcome-depot/blob/main/src/API/GAT.postman_collection.json**
 
+
+- [Documentación de la herramienta de well-plates](https://github.com/darmn-js/outcome-depot/tree/main/src/web-tools/well-plates)
+- [Manejo de permisos de las muestras](https://github.com/darmn-js/outcome-depot/tree/main/src/web-tools/sample-rights)
+
 Este es el menú principal de la plataforma. No es necesario estar autenticado para acceder a esta página. 
 
 <img src="images/home.png">
